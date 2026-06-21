@@ -1,0 +1,21 @@
+{
+  "dataset": "ar",
+  "data_root": "/home/kaixin/code/gonitis_dataset/公开数据集/archive",
+  "model": "convnext_v2",
+  "img_size": 224,
+  "epochs": 40,
+  "patience": 10,
+  "batch_size": 16,
+  "num_workers": 4,
+  "lr": 0.0001,
+  "head_lr": 0.0005,
+  "weight_decay": 0.05,
+  "label_smoothing": 0.05,
+  "monitor": "macro_f1",
+  "seed": 42,
+  "hflip": true,
+  "out_root": "experiments/results/baseline_compare",
+  "save_root": "experiments/checkpoints/baseline_compare",
+  "resolved_model": "convnextv2_base.fcmae_ft_in22k_in1k",
+  "device": "cuda"
+}

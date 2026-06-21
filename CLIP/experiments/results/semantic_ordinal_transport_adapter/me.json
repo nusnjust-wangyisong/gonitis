@@ -1,0 +1,112 @@
+{
+  "dataset": "me",
+  "method": "semantic_ordinal_transport_adapter",
+  "base_val": {
+    "accuracy": 0.8663594470046083,
+    "macro_f1": 0.8648745864253223,
+    "mae": 0.16129032258064516
+  },
+  "base_test": {
+    "accuracy": 0.875,
+    "macro_f1": 0.8774991674991675,
+    "mae": 0.15625
+  },
+  "selected": {
+    "balanced_cache": false,
+    "beta": 20.0,
+    "kernel_temperature": 0.02,
+    "kernel_mix": 0.0,
+    "ordinal_sigma": 0.75,
+    "ordinal_sign": 1.0,
+    "ordinal_scale": 0.5,
+    "cache_weight": 0.0,
+    "text_weight": 0.0,
+    "ordinal_weight": 0.2,
+    "branch_text_weight": 0.0,
+    "tau": 0.5,
+    "val": {
+      "accuracy": 0.8709677419354839,
+      "macro_f1": 0.870166282481666,
+      "mae": 0.15668202764976957
+    },
+    "stage_cache_val": {
+      "accuracy": 0.8709677419354839,
+      "macro_f1": 0.870166282481666,
+      "mae": 0.15668202764976957
+    },
+    "stage_ordinal_val": {
+      "accuracy": 0.8709677419354839,
+      "macro_f1": 0.870166282481666,
+      "mae": 0.15668202764976957
+    },
+    "expert_router": {
+      "names": [
+        "baseline",
+        "gtp",
+        "curriculum005",
+        "curriculum02"
+      ],
+      "weights": [
+        0.5,
+        0.0,
+        0.44999998807907104,
+        0.05000000074505806
+      ],
+      "adapter_weight": 0.0,
+      "val": {
+        "accuracy": 0.8755760368663594,
+        "macro_f1": 0.8686265088914047,
+        "mae": 0.14285714285714285
+      },
+      "per_expert": {
+        "gtp": {
+          "val": {
+            "accuracy": 0.8571428571428571,
+            "macro_f1": 0.8551472441483497,
+            "mae": 0.18433179723502305
+          },
+          "test": {
+            "accuracy": 0.8571428571428571,
+            "macro_f1": 0.8527260772924556,
+            "mae": 0.17410714285714285
+          }
+        },
+        "curriculum005": {
+          "val": {
+            "accuracy": 0.8571428571428571,
+            "macro_f1": 0.8531283756453876,
+            "mae": 0.15668202764976957
+          },
+          "test": {
+            "accuracy": 0.8616071428571429,
+            "macro_f1": 0.8488450764921354,
+            "mae": 0.17857142857142858
+          }
+        },
+        "curriculum02": {
+          "val": {
+            "accuracy": 0.8617511520737328,
+            "macro_f1": 0.8557646246904559,
+            "mae": 0.16129032258064516
+          },
+          "test": {
+            "accuracy": 0.8616071428571429,
+            "macro_f1": 0.8458606125589092,
+            "mae": 0.16964285714285715
+          }
+        }
+      }
+    }
+  },
+  "test": {
+    "accuracy": 0.8705357142857143,
+    "macro_f1": 0.8611347828360101,
+    "mae": 0.16071428571428573
+  },
+  "delta_test": {
+    "accuracy": -0.004464285714285698,
+    "macro_f1": -0.016364384663157372,
+    "mae": 0.004464285714285726
+  },
+  "final_cache_trainval": false
+}

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f2081b5ca0778e67509a3d562ef0a437a0507e81660b644afa1bff0ec07ff9f1
-size 128
+公开数据集/
+私有数据集/
+
+# 大文件不入库，可重新训练/下载
+CLIP/experiments/checkpoints/
+CLIP/PubMedBERT/
+__pycache__/
+*.pyc
+CLIP/third_party/Spatial-Mamba/

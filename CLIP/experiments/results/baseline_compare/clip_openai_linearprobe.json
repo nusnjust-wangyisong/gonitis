@@ -1,0 +1,23 @@
+{
+  "me": {
+    "accuracy": 0.6875,
+    "macro_precision": 0.6679,
+    "macro_recall": 0.691,
+    "macro_f1": 0.6774,
+    "mae": 0.4509
+  },
+  "ar": {
+    "accuracy": 0.4517,
+    "macro_precision": 0.4011,
+    "macro_recall": 0.4945,
+    "macro_f1": 0.4193,
+    "mae": 0.776
+  },
+  "pv": {
+    "accuracy": 0.4098,
+    "macro_precision": 0.3954,
+    "macro_recall": 0.4938,
+    "macro_f1": 0.4081,
+    "mae": 0.792
+  }
+}

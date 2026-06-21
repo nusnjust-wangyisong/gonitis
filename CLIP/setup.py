@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6a913890284a988293f7b0b3ca017de29c65ce2bdce9fdd09cb481fc6bd5a636
-size 477
+import os
+
+
+from setuptools import setup, find_packages
+
+setup(
+    name="clip",
+    py_modules=["clip"],
+    version="1.0",
+    description="",
+    author="OpenAI",
+    packages=find_packages(exclude=["tests*"]),
+    install_requires=[
+        line.strip()
+        for line in open(os.path.join(os.path.dirname(__file__), "requirements.txt"))
+        if line.strip() and not line.startswith("#")
+    ],
+    include_package_data=True,
+    extras_require={'dev': ['pytest']},
+)

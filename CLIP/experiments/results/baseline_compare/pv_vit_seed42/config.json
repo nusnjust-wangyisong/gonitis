@@ -1,0 +1,21 @@
+{
+  "dataset": "pv",
+  "data_root": "/home/kaixin/code/gonitis_dataset/私有数据集/split_result_siyouceshi_roi",
+  "model": "vit",
+  "img_size": 224,
+  "epochs": 60,
+  "patience": 10,
+  "batch_size": 16,
+  "num_workers": 4,
+  "lr": 0.0001,
+  "head_lr": 0.0005,
+  "weight_decay": 0.05,
+  "label_smoothing": 0.05,
+  "monitor": "macro_f1",
+  "seed": 42,
+  "hflip": true,
+  "out_root": "experiments/results/baseline_compare",
+  "save_root": "experiments/checkpoints/baseline_compare",
+  "resolved_model": "vit_base_patch16_224.augreg_in21k_ft_in1k",
+  "device": "cuda"
+}

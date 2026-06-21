@@ -1,0 +1,54 @@
+{
+  "dataset": "ar",
+  "method": "semantic_ordinal_transport_adapter",
+  "base_val": {
+    "accuracy": 0.6997578692493946,
+    "macro_f1": 0.7219261237326464,
+    "mae": 0.3414043583535109
+  },
+  "base_test": {
+    "accuracy": 0.7234299516908212,
+    "macro_f1": 0.7338710063343173,
+    "mae": 0.30978260869565216
+  },
+  "selected": {
+    "balanced_cache": true,
+    "beta": 40.0,
+    "kernel_temperature": 0.1,
+    "kernel_mix": 1.0,
+    "ordinal_sigma": 0.75,
+    "ordinal_sign": 1.0,
+    "ordinal_scale": 0.5,
+    "cache_weight": 0.1,
+    "text_weight": 0.0,
+    "ordinal_weight": 0.3,
+    "branch_text_weight": 0.0,
+    "tau": 0.5,
+    "val": {
+      "accuracy": 0.7094430992736077,
+      "macro_f1": 0.7338296275838152,
+      "mae": 0.33171912832929784
+    },
+    "stage_cache_val": {
+      "accuracy": 0.6961259079903148,
+      "macro_f1": 0.7301578239593949,
+      "mae": 0.34382566585956414
+    },
+    "stage_ordinal_val": {
+      "accuracy": 0.7094430992736077,
+      "macro_f1": 0.7265112946579809,
+      "mae": 0.3353510895883777
+    }
+  },
+  "test": {
+    "accuracy": 0.7222222222222222,
+    "macro_f1": 0.7336762560932257,
+    "mae": 0.31280193236714976
+  },
+  "delta_test": {
+    "accuracy": -0.0012077294685990392,
+    "macro_f1": -0.00019475024109161243,
+    "mae": 0.003019323671497598
+  },
+  "final_cache_trainval": false
+}

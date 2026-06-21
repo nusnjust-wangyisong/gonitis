@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7321e23e3b7e43907ef04157076ed65c9de7827e49944af1caa442c09df935f0
-size 390
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 模型权重与过程产物（体积大，不随仓库提供；按 README 重新训练生成）
+checkpoints*/
+*.pt
+*.pth
+*.npy
+
+# 训练日志
+logs/
+*.log
+
+# 探索性 / 中间结果目录（最终结果保留在 results_final/ 与 docs/ 中说明的目录）
+# 如需保留某个结果目录，可在此用 ! 取消忽略，例如：
+# !results_final/

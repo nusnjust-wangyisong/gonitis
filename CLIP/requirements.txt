@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5932b29c3fecfdc88407f2949b2176fd4575b0ed742471f7d4aeac28204e1a7f
-size 365
+# 核心深度学习（建议 torch>=2.3，搭配 CUDA 12.x；CPU 也可运行但很慢）
+torch
+torchvision
+
+# 文本编码器 PubMedBERT
+transformers
+
+# 异构集成成员 ConvNeXt-V2，以及 BiomedCLIP 视觉主干
+timm
+open_clip_torch
+
+# 图像预处理与评估
+opencv-python
+pillow
+numpy
+scikit-learn
+pandas
+
+# CLIP 分词与工具
+ftfy
+packaging
+regex
+tqdm

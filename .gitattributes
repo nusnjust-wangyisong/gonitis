@@ -1,2 +1,7 @@
-* filter=lfs diff=lfs merge=lfs -text
-.gitattributes -filter -diff -merge text
+# 仅对大文件/二进制使用 Git LFS；源码与文档（.py/.md/.json/.txt 等）保持普通 git
+*.png  filter=lfs diff=lfs merge=lfs -text
+*.svg  filter=lfs diff=lfs merge=lfs -text
+*.npy  filter=lfs diff=lfs merge=lfs -text
+*.pt   filter=lfs diff=lfs merge=lfs -text
+*.pth  filter=lfs diff=lfs merge=lfs -text
+*.gz   filter=lfs diff=lfs merge=lfs -text

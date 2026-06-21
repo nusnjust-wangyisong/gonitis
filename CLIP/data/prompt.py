@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ba9083743dd15dc508170c8d65301c5e331caacd907d7526ca223d62b496a2e0
-size 1038
+try:
+    from data.promptyuan import KL_PROMPTS
+except Exception:
+    KL_PROMPTS = {
+        "KneeOA": {
+            "templates": [
+                "knee X-ray showing {}"
+            ],
+            "slide_classnames": [
+                [
+                    "grade 0 (none): definite absence of x-ray changes of osteoarthritis",
+                ],
+                [
+                    "grade 1 (doubtful): doubtful joint space narrowing and possible osteophytic lipping",
+                ],
+                [
+                    "grade 2 (minimal): definite osteophytes and possible joint space narrowing",
+                ],
+                [
+                    "grade 3 (moderate): moderate multiple osteophytes, definite narrowing of joint space, some sclerosis and possible deformity of bone ends",
+                ],
+                [
+                    "grade 4 (severe): large osteophytes, marked narrowing of joint space, severe sclerosis and definite deformity of bone ends",
+                ],
+            ]
+        }
+    }
